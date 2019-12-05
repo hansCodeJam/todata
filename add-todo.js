@@ -1,17 +1,21 @@
 // A function that adds an item to our todo list.
-const addTodo = function(text) {
+const addTodo = (str) => {
+  const priorityOption = document.querySelector('.priority');
+
   let todo = {
-    text: text,
-    id: todos.length + 1,
+    text: str,
+    id: todos.length,
     complete: false,
-    priority: 1
+    priority: Number(priorityOption.value),
   }
   todos.push(todo);
+
+  return todo;
 }
 
-const input = document.querySelector('.todo-input');
+const userInput = document.querySelector('.todo-input');
 
 document.querySelector('.add-todo').addEventListener('click', function(){
-  addTodo(input.value);
-  input.value = ''
+  printTodo(addTodo(userInput.value));
+  userInput.value = '';
 })
