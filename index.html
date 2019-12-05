@@ -10,26 +10,33 @@
   </head>
   <body>
     <div class="container-fluid">
-      <h1>Todo</h1>
+      <h1>Todo App</h1>
         <section>
-        <div>
-          <label for="todo-input">Add to your todo list!</label>
-          <input class="todo-input" type="text" name="todo-input">
-          <label for="priority">Priority:</label>
-          <select class="form-control priority" name="priority">
-            <option value="1">Low</option>
-            <option value="2">High</option>
-          </select>
+        <div class="mt-2 row">
+          <div class="col-7">
+            <input class="form-control todo-input" type="text" name="todo-input" placeholder="Add to your todo list!">
+          </div>
+          <div class="col-1">
+            <label for="priority">Priority:</label>
+          </div>
+          <div class="col-3">
+            <select class="form-control priority" name="priority">
+              <option value="1">Low</option>
+              <option value="2">High</option>
+            </select>
+          </div>
         </div>
-        <div>
-          <button class="btn btn-primary btn-sm add-todo">ADD</button>
-          <button class="btn btn-primary btn-sm left-todo">NOT COMPLETE</button>
-          <button class="btn btn-primary btn-sm sort-completed-todo">SORT NOT COMPLETED</button>
-          <button class="btn btn-primary btn-sm sort-priority-todo">SORT PRIORITY</button>
-          <button class="btn btn-primary btn-sm priority-todo">HIGH PRIORITY</button>
+        <div class="mt-2">
+          <button class="btn btn-primary add-todo">ADD</button>
+          <button class="btn btn-primary left-todo">NOT COMPLETE</button>
+          <button class="btn btn-primary sort-completed-todo">SORT NOT COMPLETED</button>
+          <button class="btn btn-primary sort-priority-todo">SORT PRIORITY</button>
+          <button class="btn btn-primary priority-todo">HIGH PRIORITY</button>
         </div>
         </section>
-      <ol class="todo-list"></ol>
+        <div class="mt-2">
+          <ol class="todo-list"></ol>
+        </div>
     </div>
     <script src="./todos.js"></script>
     <script src="./buttonTodos/add-todo.js"></script>
