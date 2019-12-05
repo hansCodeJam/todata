@@ -1,3 +1,7 @@
+* {
+  font-family: 'Black Ops One', cursive;
+}
+
 .complete {
   text-decoration: line-through;
 }
