@@ -1,3 +1,4 @@
 document.querySelector('#left-todo').addEventListener('click', function() {
-  printTodo(addTodo(userInput.value));
+  clearTodos()
+  printTodos(justNotComplete(currentTodos))
 })
