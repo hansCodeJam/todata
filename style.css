@@ -1,11 +1,16 @@
 * {
   font-family: 'Black Ops One', cursive;
+  background-color: #5CDB95;
+  color: #05386B;
 }
 
 .complete {
   text-decoration: line-through;
 }
+.todo-input {
+background-color: #edf5e1 !important;
+}
 
-.todo-list {
-  
+.btn {
+  background-color: #05386B !important;
 }
