@@ -1,9 +1,9 @@
 // A function that adds an item to our todo list.
-const addTodo = (str) => {
+const addTodo = (text) => {
   const priorityOption = document.querySelector('.priority');
 
   let todo = {
-    text: str,
+    text: text,
     id: todos.length,
     complete: false,
     priority: Number(priorityOption.value),
