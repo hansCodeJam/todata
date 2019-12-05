@@ -1,3 +1,3 @@
-document.querySelector('.priority-todo').addEventListener('click', () => {
+// document.querySelector('#priority-todo').addEventListener('click', () => {
     
-  })
+//   })
