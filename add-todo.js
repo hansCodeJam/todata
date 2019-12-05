@@ -4,14 +4,13 @@ const addTodo = function(text) {
     text: text,
     id: todos.length + 1,
     complete: false,
-    priority: 1
+    priority: document.querySelector('.priority').value
   }
   todos.push(todo);
 }
 
-const input = document.querySelector('.todo-input');
+const input = document.querySelector('todo-input').value;
 
-document.querySelector('.add-todo').addEventListener('click', function(){
-  addTodo(input.value);
-  input.value = ''
-})
+document.querySelector('.add-todo').addEventListener('click', () => printTodo(addTodo(input)))
+
+

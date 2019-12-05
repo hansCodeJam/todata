@@ -129,7 +129,6 @@ const priority2Only = (todos) => todos.filter((todo) => todo.priority === 2)
 
 const priority1Only = (todos) => todos.filter((todo) => todo.priority === 1)
 
-
 const notCompleteFirst = (todos) => twoPileSort(todos, (todo) => !todo.complete)
 
 const priority2First = (todos) => twoPileSort(todos, (todo) => todo.priority === 2)
