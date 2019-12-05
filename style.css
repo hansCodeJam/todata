@@ -4,23 +4,31 @@
   color: #05386B;
   border: 0 !important;
 }
-
+​
+.title {
+  padding: 15px 0px 5px 1px;
+}
+​
 .complete {
   text-decoration: line-through;
 }
-
+​
 .todo-input {
 background-color: #edf5e1 !important;
 }
-
+​
 .btn {
   background-color: #05386B !important;
 }
-
+​
 .priority {
   background-color: #edf5e1 !important;
 }
-
+​
 .btn-primary {
   color: #edf5e1 !important;
+}
+​
+.btn-primary:hover {
+background-color: #379683 !important;
 }
